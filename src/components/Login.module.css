@@ -1,0 +1,90 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 468px;
+    margin: 30px auto;
+    align-items: center;
+}
+.container img{
+    width: 20%;
+}
+.container .form{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 40px;
+    background: #fff;
+    width: 100%;
+    border-radius: 8px;
+}
+.container .form h2{
+    text-align: center;
+    color: #ED5454;
+    margin-bottom: 50px;
+}
+.linked a{
+    text-decoration: none;
+    color: black;
+    margin-left: 350px;
+}
+.linkedo label{
+    text-decoration: none;
+    color: black;
+    margin-left: 270px;
+}
+.linkedo label a{
+    text-decoration: none;
+    color: #ED5454;
+}
+.container .form button{
+    width: 50%;
+    margin: 20px auto;
+    padding: 10px;
+    margin-left: 100px;
+    font-size: large;
+    border-radius: 8px;
+    border: 1px solid #ED5454;
+}
+.container .form button:focus{
+    background: red;
+    color: white;
+
+  
+}
+.form_control{
+    position: relative;
+}
+.form_control input{
+    border-radius: 6px;
+    position: relative;
+    width: 100%;
+    margin: 10px;
+    line-height: 6ex;
+    font-size: large;
+    outline: none;
+}
+.form_control label{
+    position: absolute;
+    top: 0.2ex;
+    z-index: 1;
+    left: 2em;
+    background: #fff;
+    padding: 0 5px;
+}
+@media (max-width: 786px) {
+    .form_control input{
+        width: 90%;
+    }
+    .linkedo label{
+        text-decoration: none;
+        color: black;
+        margin-left: 180px;
+    }
+    .linked a{
+        text-decoration: none;
+        color: black;
+        margin-left: 230px;
+    }
+    
+}

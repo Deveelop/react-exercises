@@ -1,29 +1,13 @@
-import React, {useState} from 'react';
-import TodoLists from './TodoLists';
-import './App.css';
-import NewTodo from './NewTodo';
-
-
-const Dummy_Todos = [{
-  task:'Learn React'
-}
-
-];
-
+import Counter from "./components/Counter";
+import FastlaneHome from "./components/FastlaneHome";
+import FastlaneLogin from "./components/FastlaneLogin";
 function App() {
-  const [enteredTodo, setEnteredTodos] = useState(Dummy_Todos)
- 
-  const highestHandler = (taskData) => {
-
-   setEnteredTodos(prevData => {
-    return [taskData, ...prevData]
-   })
-  }
+  
   return (
-    <div>
-     <NewTodo onAddMore={highestHandler}/>
-   <TodoLists text={enteredTodo}/>
-    </div>
+    <>
+   <FastlaneHome/>
+   <FastlaneLogin/>
+    </>
   );
 }
 
