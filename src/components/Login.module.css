@@ -45,6 +45,7 @@
     font-size: large;
     border-radius: 8px;
     border: 1px solid #ED5454;
+    cursor: pointer;
 }
 .container .form button:focus{
     background: red;
