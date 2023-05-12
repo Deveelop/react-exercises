@@ -5,14 +5,14 @@ import Button from "./Button";
 export default function ErrorModal(props){
     return(
         <>
-        <div className={styles.backdrop}></div>
+        <div className={styles.backdrop} onClick={props.onError}></div>
         <Card className={styles.modal}>
             <header className={styles.header}>
                 <h2>{props.title}</h2>
             </header>
             <div className={styles.comment}><p>{props.message}</p></div>
             <footer className={styles.action}>
-            <Button>Okay</Button>
+            <Button className={styles.button} onClick={props.onError}>Okay</Button>
             </footer>
         </Card>
         </>
