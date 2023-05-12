@@ -65,6 +65,7 @@
     font-size: large;
     outline: none;
 }
+
 .form_control label{
     position: absolute;
     top: 0.2ex;
@@ -72,6 +73,25 @@
     left: 2em;
     background: #fff;
     padding: 0 5px;
+}
+.ic1{
+    position: absolute;
+    z-index: 1;
+    left: 27rem;
+    top: 4.6ex;
+}
+.ic2{
+    position: absolute;
+    z-index: 1;
+    top: 4.6ex ;
+    left: 1.5em;
+}
+.eyes{
+    position: absolute;
+    z-index: 1;
+    left: 27rem;
+    top: 4.6ex;
+    cursor: pointer;
 }
 @media (max-width: 786px) {
     .form_control input{
